@@ -69,6 +69,11 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     apt-get --assume-yes update
     apt-get --assume-yes upgrade
-    apt-get --assume-yes install ubuntu-desktop
+
+    apt-get --assume-yes install \
+    ubuntu-desktop \
+    virtualbox-guest-x11
+
+    sudo reboot
   SHELL
 end
