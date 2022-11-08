@@ -54,3 +54,19 @@ ssh-keygen
 Copy the key to your Github settings.
 
 Perform chezmoi commands to continue building the environment from inside the virtual machine.
+
+## Every day use
+
+Start the 1Password GUI application.
+
+Log into the 1Password GUI.
+
+Log into the 1Password CLI.
+
+```bash
+op signin my.1password.com iainelder@hotmail.co.uk
+```
+
+Start Firefox.
+
+Log into your Firefox account to sync the browser data and configuration.
