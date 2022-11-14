@@ -55,6 +55,16 @@ Copy the key to your Github settings.
 
 Perform chezmoi commands to continue building the environment from inside the virtual machine.
 
+## Restore Thunderbird profile
+
+See "Borg: Try to restore to a different computer" for inspiration.
+
+```bash
+cd "$(mktemp --dir)"
+
+borg extract --list "::full_system_2022-11_12_15:33" home/isme/.thunderbird
+```
+
 ## Every day use
 
 Start the 1Password GUI application.
